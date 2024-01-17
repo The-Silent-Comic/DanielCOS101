@@ -1,0 +1,11 @@
+fn main(){
+}
+let v = vec![20, 40, 60, 80];
+// vector v owns the object in heap
+let v2 = v;
+let v2_return = display(v2.clone());
+println("In main {:?}",v);
+fn display (v: Vec<i32>)->Vec<132> { 
+	println!("inside display {:?}",v);
+	 return v;
+}
